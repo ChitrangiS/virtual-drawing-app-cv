@@ -1,4 +1,4 @@
-# 🎨 Virtual Drawing App — Hand Gesture
+#  Virtual Drawing App — Hand Gesture
 
 Draw on your screen using your **index finger via webcam** — no mouse, no stylus required.
 
@@ -6,16 +6,16 @@ This project uses real-time hand tracking to convert finger movements into digit
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✋ Gesture-based drawing (no physical input device)
-- 🎯 Accurate fingertip tracking using 21 hand landmarks
-- ✍️ Smooth strokes with EMA (Exponential Moving Average)
-- 🎨 5-color palette switching (live)
-- 📏 Adjustable brush size (2–40 px)
-- 🧼 Clear canvas with a key press
-- 🔵 Live fingertip cursor indicator
-- 🟢 Active draw mode indicator
+-  Gesture-based drawing (no physical input device)
+-  Accurate fingertip tracking using 21 hand landmarks
+-  Smooth strokes with EMA (Exponential Moving Average)
+-  5-color palette switching (live)
+-  Adjustable brush size (2–40 px)
+-  Clear canvas with a key press
+-  Live fingertip cursor indicator
+-  Active draw mode indicator
 
 ---
 
@@ -27,7 +27,7 @@ This project uses real-time hand tracking to convert finger movements into digit
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 Follow these steps carefully:
 
@@ -47,7 +47,7 @@ venv\Scripts\activate
 Mac/Linux
 
 source venv/bin/activate
-## ⚙️ How It Works
+##  How It Works
 
 Webcam Input
      ↓
@@ -75,24 +75,24 @@ Middle finger is DOWN
 Otherwise, the cursor moves without drawing
 
 
-## 📁 Project Structure
+## Project Structure
 virtual-drawing-app/
 │
 ├── virtual_draw.py
 ├── README.md
 └── requirements.txt
 
-## ⚡ Performance
+##  Performance
 Runs at ~20–30 FPS on standard systems
 Works best in good lighting conditions
 Optimized for single-hand tracking
 
-## ⚠️ Limitations
+##  Limitations
 Reduced accuracy in low light
 No multi-hand support
 Limited gesture set
 
-## 🔮 Future Improvements
+##  Future Improvements
 Multi-hand interaction
 Gesture-based tool selection
 Save drawings as images
