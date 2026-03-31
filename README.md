@@ -1,52 +1,51 @@
-#  Virtual Drawing App — Hand Gesture
 
-Draw on your screen using your **index finger via webcam** — no mouse, no stylus required.
-
-This project uses real-time hand tracking to convert finger movements into digital drawing strokes, creating a natural and interactive human-computer interface.
+# Virtual Drawing Application using Hand Gesture Recognition
 
 ---
 
-##  Features
+## 1. Project Overview
 
--  Gesture-based drawing (no physical input device)
--  Accurate fingertip tracking using 21 hand landmarks
--  Smooth strokes with EMA (Exponential Moving Average)
--  5-color palette switching (live)
--  Adjustable brush size (2–40 px)
--  Clear canvas with a key press
--  Live fingertip cursor indicator
--  Active draw mode indicator
+The Virtual Drawing Application is a computer vision-based system that enables users to draw on a digital canvas using hand gestures captured through a webcam. The system eliminates the need for traditional input devices such as a mouse or stylus by leveraging real-time hand tracking.
+
+The application uses hand landmark detection to identify the position of the index finger and maps its movement onto the screen to simulate drawing. It provides an intuitive and interactive interface, demonstrating the practical application of gesture-based human-computer interaction.
 
 ---
 
-## 🛠️ Tech Stack
+## 2. Features
 
-- **MediaPipe** — Hand tracking (21 landmarks detection)
-- **OpenCV** — Webcam capture and drawing
-- **NumPy** — Canvas and array operations
+- Real-time hand tracking using webcam input  
+- Gesture-based drawing using index finger  
+- Smooth drawing using noise reduction techniques (EMA smoothing)  
+- Multiple color options for drawing  
+- Adjustable brush size  
+- Clear canvas functionality  
+- Real-time rendering and visual feedback  
 
 ---
 
-##  Installation & Setup
+## 3. System Requirements
 
-Follow these steps carefully:
+### Hardware Requirements
 
-### 1. Clone the Repository
+- A system with a working webcam  
+- Minimum 4 GB RAM (8 GB recommended)  
+- Processor: Intel i3 or equivalent and above  
 
+### Software Requirements
 
+- Python 3.8 or higher  
+- Operating System: Windows, macOS, or Linux  
 
+---
 
-2. Create Virtual Environment (Recommended)
+## 4. Environment Setup
+
+It is recommended to create a virtual environment to manage dependencies effectively.
+
+### Step 1: Create a Virtual Environment
+
+```bash
 python -m venv venv
-Activate it:
-
-Windows
-
-venv\Scripts\activate
-
-Mac/Linux
-
-source venv/bin/activate
 ##  How It Works
 
 Webcam Input
@@ -66,7 +65,7 @@ Drawing using OpenCV
 Overlay Canvas
      ↓
 Real-time Display
-
+```
 ## Core Logic
 The system tracks the index finger tip position
 Drawing happens only when:
